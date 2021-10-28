@@ -1,1 +1,16 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple-Alert demo</title>
+        <meta charset="utf-8">
+        <link rel='stylesheet' type='text/css' href='//cdn.jsdelivr.net/gh/Parking-Master/Simple-Button@latest/sbtn.min.css' />
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Parking-Master/Simple-Alert@latest/simplealert.js"></script>
+        <style>
+          body { margin-left: 40%; margin-top: 10%; }
+          .ws { margin-left: 15px; margin-right: 15px; }
+        </style>
+    </head>
+    <body>
+    <click onclick="simple.alert('A nice alert box.')">Alert</click> <span class="ws"></span> <click onclick="simple.confirm('Do you want to leave?', () => { simple.alert('You left!') })">Confirm</click> <span class="ws"></span> <click onclick="simple.prompt('Please enter your full name:', '', function(val) { simple.alert('You typed: ' + val) })">Prompt</click>
+    </body>
+</html>
